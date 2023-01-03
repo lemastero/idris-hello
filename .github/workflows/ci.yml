@@ -10,6 +10,6 @@ jobs:
       - name: Setup Idris
         uses: sergeyshpadyrev/setup-idris@v1.2
       - name: Compile program
-        run: idris src/hola.idr -o main
+        run: idris ./src/Hola.idr -o hola
       - name: Run program
         run: ./build/exec/hola
